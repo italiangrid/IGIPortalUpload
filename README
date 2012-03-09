@@ -1,5 +1,5 @@
 IGIPortletUpload
 
-Portlet per upload remoto di file di grandi dimensioni con chuncking e resuming upload per https://portal.italiangrid.it.
+Portlet for remote upload of huge file with chunking and resumable upload for https://portal.italiangrid.it portal.
 
 Created by Diego Michelotto - diego.michelotto@cnaf.infn.it
