@@ -81,14 +81,14 @@ $(function () {
     	            .options.fail.call(this, e, data);
     	    },
     		
-    		stop:function (e, data) {
+    		/*stop:function (e, data) {
     			var that=this;
     			var subdir = $("#subdir").val();
     	         $.getJSON('http://gridlab06.cnaf.infn.it/jQueryFileUpload/server/php/index.php', {file: data.files[0].name, subdir: subdir}, function (file) {
     		            $(that).fileupload('option', 'done')
     	                    .call(that, null, {result: result});
     		        });
-    	    }
+    	    }*/
         });
 
 
