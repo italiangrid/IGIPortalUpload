@@ -18,7 +18,7 @@
 <div class="container">
     <br>
     <!-- The file upload form used as target for the file upload widget -->
-    <form id="fileupload" action="http://gridlab06.cnaf.infn.it/jQueryFileUpload/server/php/" method="POST" enctype="multipart/form-data">
+    <form id="fileupload" action="https://gridlab07.cnaf.infn.it/jQueryFileUpload/server/php/" method="POST" enctype="multipart/form-data">
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
         <input type="hidden" id="subdir" name="subdir" value="<%= ((User) request.getAttribute(WebKeys.USER)).getUserId() %>" />
         <div class="row fileupload-buttonbar">

@@ -34,7 +34,7 @@ $(function () {
     			var subdir = $("#subdir").val();
     			
     		    var that = this;
-    	        $.getJSON('http://gridlab06.cnaf.infn.it/jQueryFileUpload/server/php/index.php', {file: data.files[0].name, subdir: subdir}, function (file) {
+    	        $.getJSON('https://gridlab07.cnaf.infn.it/jQueryFileUpload/server/php/index.php', {file: data.files[0].name, subdir: subdir}, function (file) {
     	            data.uploadedBytes = file && file.size;
     				//alert(file.size);
     				//alert(data.uploadedBytes);
@@ -59,7 +59,7 @@ $(function () {
     	        var fu = $(this).data('fileupload'),
                 retries = data.context.data('retries') || 0,
                 retry = function () {
-                    $.getJSON('http://gridlab06.cnaf.infn.it/jQueryFileUpload/server/php/index.php', {file: data.files[0].name, subdir: subdir})
+                    $.getJSON('https://gridlab07.cnaf.infn.it/jQueryFileUpload/server/php/index.php', {file: data.files[0].name, subdir: subdir})
                         .done(function (file) {
                             data.uploadedBytes = file && file.size;
                             data.submit();

@@ -31,7 +31,7 @@ $(function() {
 	$("#uploader").plupload({
 		// General settings
 		runtimes : 'silverlight',
-		url : 'http://gridlab06.cnaf.infn.it/plupload/examples/upload.php?subdir=<%= ((User) request.getAttribute(WebKeys.USER)).getUserId() %>',
+		url : 'http://gridlab07.cnaf.infn.it/plupload/examples/upload.php?subdir=<%= ((User) request.getAttribute(WebKeys.USER)).getUserId() %>',
 		max_file_size : '10240mb',
 		max_file_count: 20, // user can add no more then 20 files at a time
 		chunk_size : '10mb',
@@ -48,10 +48,11 @@ $(function() {
 		sortable: true,
 
 		// Specify what files to browse for
-		filters : [
+		/*filters : [
 			{title : "Image files", extensions : "jpg,gif,png,pdf"},
 			{title : "Zip files", extensions : "zip,avi"}
-		],
+			{title : "Other files", extensions : "txt,jdl,img"}
+		],*/
 
 		// Flash settings
 		flash_swf_url : '/IGIPortalUpload-0.0.1/js/plupload.flash.swf',
